@@ -1,35 +1,49 @@
 import React, { Component } from 'react';
 import 'rc-color-picker/assets/index.css';
-// import React from 'react';
-// import ReactDOM from 'react-dom';
+import { connect } from 'react-redux';
 import { Panel as ColorPickerPanel } from 'rc-color-picker';
+import changeMainColorAction from './../redux/actions/change.main.color.action';
  
 
 
 class ColorPickerComponent extends Component {
-  constructor (props) {
-    super (props)
-    this.state = {
-      currColor: 'red'
-    }
-  }
+  // constructor (props) {
+  //   super (props)
+  //   this.state = {
+  //     currColor: 'red'
+  //   }
+  // }
   
-  onChange = ({color}) => {
-    this.setState({
-      currColor: color
-    })
-  }
+  // onChange = ({color}) => {
+  //   this.setState({
+  //     currColor: color
+  //   })
+  // }
 
   render() {
     return (      
       <ColorPickerPanel 
         enableAlpha={false} 
-        color={this.state.currColor} 
-        onChange={this.onChange} 
+        color={this.props.mainColor} 
+        onChange={this.props.changeMainColor} 
         mode="RGB" 
       />   
     )
   }
 }
 
-export default ColorPickerComponent;
+const mapStateToProps = state => {
+  return {
+    mainColor: state.mainColor  
+  }
+}
+
+const mapDispatchToProps = dispatch => ({ 
+  changeMainColor: color => {
+    dispatch(changeMainColorAction(color))
+  } 
+})
+
+export default connect(mapStateToProps, mapDispatchToProps)(ColorPickerComponent);
+
+

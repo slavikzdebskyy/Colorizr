@@ -18,5 +18,24 @@ code {
   display: none;
 }
 .rc-color-picker-panel-wrap-ribbon {
-  width: 200px;
+  width: 300px;
+}
+.rc-color-picker-panel-board-hsv {
+  width: 300px;
+  height: 300px;
+}
+.rc-color-picker-panel-inner {
+  width: 318px;
+}
+.flex-row-space-around-center-wrap {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.flex-col-space-between-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
 }
