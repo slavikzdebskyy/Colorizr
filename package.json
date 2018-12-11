@@ -2,12 +2,6 @@
   "name": "colorizr",
   "version": "0.1.0",
   "private": true,
-  "dependencies": {
-    "react": "^16.6.3",
-    "react-color-picker": "^4.0.2",
-    "react-dom": "^16.6.3",
-    "react-scripts": "2.1.1"
-  },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
@@ -23,6 +17,12 @@
     "not ie <= 11",
     "not op_mini all"
   ],
+  "dependencies": {
+    "rc-color-picker": "^1.2.6",
+    "react": "^16.6.3",
+    "react-dom": "^16.6.3",
+    "react-scripts": "2.1.1"
+  },
   "devDependencies": {
     "node-sass": "^4.11.0"
   }

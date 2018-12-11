@@ -18,5 +18,9 @@ App greates variables of colors in Sass, Less, Stylus;
 * HTML/SCSS
 * [react-color-picker](https://www.npmjs.com/package/react-color-picker)
 
+ ## Copied from:
+
+ * [Colorizr-origianl](https://dosandk.github.io/react-challenge-colorizr/#/?_k=528n6c)
+
  
 

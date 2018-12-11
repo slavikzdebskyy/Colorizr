@@ -12,3 +12,11 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+.rc-color-picker-panel-wrap:last-child,
+.rc-color-picker-panel-wrap-preview {
+  display: none;
+}
+.rc-color-picker-panel-wrap-ribbon {
+  width: 200px;
+}
