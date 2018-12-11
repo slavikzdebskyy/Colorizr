@@ -1,0 +1,42 @@
+header {
+  width: 100%;
+  height: 100px;  
+}
+
+img.logo-img-svg {
+  max-width: 200px;
+}
+
+ul.nav {
+  li {
+    color: #e91e63;
+    cursor: pointer;
+    padding: 5px 10px 5px;
+    margin: 0 3px 0;
+    transition: 0.3s;
+    border-radius: 5px;
+    font-weight: 500;
+    &:hover {
+      background: #ccc;
+    }
+    &:active {
+      background: #e91e63;
+      color: #fff;
+    }
+  }  
+}
+
+h1.title {
+  width: 100%;
+  text-align: center;
+  margin: 50px 0 50px;
+}
+
+.app-container {
+  width: 100%;
+}
+
+.create-container {
+  width: 100%;
+  min-height: 700px;
+}

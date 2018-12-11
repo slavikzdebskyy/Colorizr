@@ -2,25 +2,13 @@ import React, { Component } from 'react';
 import 'rc-color-picker/assets/index.css';
 import { connect } from 'react-redux';
 import { Panel as ColorPickerPanel } from 'rc-color-picker';
-import changeMainColorAction from './../redux/actions/change.main.color.action';
+import changeMainColorAction from '../redux/actions/change.main.color.action';
  
 
 
 class ColorPickerComponent extends Component {
-  // constructor (props) {
-  //   super (props)
-  //   this.state = {
-  //     currColor: 'red'
-  //   }
-  // }
   
-  // onChange = ({color}) => {
-  //   this.setState({
-  //     currColor: color
-  //   })
-  // }
-
-  render() {
+  render () {
     return (      
       <ColorPickerPanel 
         enableAlpha={false} 
