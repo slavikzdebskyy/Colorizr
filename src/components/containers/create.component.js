@@ -16,7 +16,7 @@ class CreateComponent extends Component {
         style = {{backgroundColor : `${this.props.mainColor}`}}
       >
         <h1 className = 'title'>Choose your color</h1>
-        <ColorPickerComponent />
+        <ColorPickerComponent hidden = {true} />
         <SelectedColors />
         <DarkerAndLighter />
       </div>

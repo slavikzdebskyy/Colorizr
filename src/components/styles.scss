@@ -30,8 +30,10 @@
 
 .darker-and-lighter-container {
   height: 370px;
+  padding: 30px 0 30px;
   .btns-container {
     @include flex(row, center, flex-start);
     width: 100%; 
+    padding-left: 30px;
   }
 }

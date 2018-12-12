@@ -44,6 +44,9 @@ h1.title {
 }
 h2 {
   margin-top: 0;
+  &.darker-and-lighter-title {
+    padding-left: 30px;
+  }
 }
 
 ul {
@@ -147,6 +150,9 @@ button.btn {
       &:hover {
         background-color: #d42d1b;
       }
+    }
+    &.hidden {
+      visibility: hidden;
     }    
   }
 

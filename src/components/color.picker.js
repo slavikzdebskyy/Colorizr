@@ -1,25 +1,32 @@
 import React, { Component } from 'react';
-import 'rc-color-picker/assets/index.css';
 import { connect } from 'react-redux';
 import { Panel as ColorPickerPanel } from 'rc-color-picker';
 
 import changeMainColorAction from '../redux/actions/change.main.color.action';
-import changeDarkLightAction from './../redux/actions/change.dark.light.action';
+import { changeDarkLightAction } from '../redux/actions/dark.light.actions';
 
-import getDarkenArray from './../func/get.darken.array';
+import { getDarkenArray } from '../func/functions';
+
+import 'rc-color-picker/assets/index.css';
  
 
 
 class ColorPickerComponent extends Component {
   
   render () {
-    return (      
-      <ColorPickerPanel 
-        enableAlpha = {false} 
-        color = {this.props.mainColor} 
-        onChange = {this.props.changeMainColor} 
-        mode = "RGB" 
-      />   
+    return ( 
+      <div>
+        {this.props.hidden ?
+          <ColorPickerPanel 
+            enableAlpha = {false} 
+            color = {this.props.mainColor} 
+            onChange = {this.props.changeMainColor} 
+            mode = "RGB" 
+          /> : null} 
+
+      </div>
+          
+        
     )
   }
 }
