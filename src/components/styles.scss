@@ -1,42 +1,37 @@
-header {
-  width: 100%;
-  height: 100px;  
-}
-
-img.logo-img-svg {
-  max-width: 200px;
-}
-
-ul.nav {
-  li {
-    color: #e91e63;
-    cursor: pointer;
-    padding: 5px 10px 5px;
-    margin: 0 3px 0;
-    transition: 0.3s;
-    border-radius: 5px;
-    font-weight: 500;
-    &:hover {
-      background: #ccc;
-    }
-    &:active {
-      background: #e91e63;
-      color: #fff;
-    }
-  }  
-}
-
-h1.title {
-  width: 100%;
-  text-align: center;
-  margin: 50px 0 50px;
+@mixin flex($flexDirection, $alignItems, $justifyContent){
+  display: flex;
+  flex-direction: $flexDirection;
+  align-items: $alignItems;
+  justify-content: $justifyContent;
 }
 
 .app-container {
+  @include flex(column, center, space-between);
   width: 100%;
 }
 
 .create-container {
+  @include flex(column, center, flex-start);
   width: 100%;
   min-height: 700px;
+}
+
+.selected-colors-container,
+.darker-and-lighter-container {
+  @include flex(column, flex-start, space-around);
+  width: 1200px;
+  height: 220px;
+  margin: auto;
+  margin-top: 50px;  
+  margin-bottom: 40px;
+  padding: 30px;
+  background-color: #fff;
+}
+
+.darker-and-lighter-container {
+  height: 370px;
+  .btns-container {
+    @include flex(row, center, flex-start);
+    width: 100%; 
+  }
 }

@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 
-import ColorPickerComponent from '../color.picker.component';
+import ColorPickerComponent from '../color.picker';
+import SelectedColors from '../slected.colors';
+import DarkerAndLighter from '../darker.lighter';
 
 import '../styles.scss';
 
@@ -10,19 +12,21 @@ class CreateComponent extends Component {
   render () {
     return (
       <div 
-        className = 'create-container flex-col-justify-start-center'
+        className = 'create-container'
         style = {{backgroundColor : `${this.props.mainColor}`}}
       >
         <h1 className = 'title'>Choose your color</h1>
         <ColorPickerComponent />
+        <SelectedColors />
+        <DarkerAndLighter />
       </div>
     );
   }
 }
 
-const mapStateToProps = state => {
+const mapStateToProps = store => {
   return {
-    mainColor: state.mainColor  
+    mainColor: store.mainColor  
   }
 }
 

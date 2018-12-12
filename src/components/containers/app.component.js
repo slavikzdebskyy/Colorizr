@@ -9,7 +9,7 @@ class AppComponent extends Component {
 
   render () {
     return (
-      <div className="app-container flex-col-space-between-center">
+      <div className = 'app-container'>
         <HeaderComponent />
         <CreateComponent />
       </div>
