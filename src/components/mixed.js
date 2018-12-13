@@ -1,24 +1,28 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 
-import { selectDarkLightAction, selectAllDarkLightAction, removeAllDarkLightAction } from '../redux/actions/darker.actions';
-import { changeBgDarkLightAction } from './../redux/actions/change.background.actions';
+import ColorPickerComponent from './color.picker';
+import { changeBgMixedAction } from './../redux/actions/change.background.actions';
+import { selectAllMixedAction, selectMixedAction, removeAllmixedAction } from './../redux/actions/mixed.actions';
 import { isVisibleRemoveBtn } from '../func/functions';
 
 import './styles.scss';
 
-class DarkerAndLighterComponent extends Component {
+class MixedComponent extends Component {
  
   render () {
 
     return (
-      <div className = 'darker-container'>
-        <h2 className = 'darker-title'>Darker and Lighter</h2>        
+      <div className = 'mixed-container'>
+        <div className = 'mixed-title-container'>
+          <h2 className = 'mixed-title'>Mixed with</h2>
+          <ColorPickerComponent hidden = {true} /> 
+        </div>              
         <ul 
-          className = 'darker-list'
-          style = {this.props.isDarkBg.isDarkBgDarker ? {backgroundColor : '#000'} : null}
+          className = 'mixed-list'
+          style = {this.props.isDarkBg.isDarkBgMixed ? {backgroundColor : '#000'} : null}
         >
-        {this.props.darkerArray.map((item, index) => (
+        {this.props.mixedArray.map((item, index) => (
           <li  
             key = {index}          
             style = {{backgroundColor : `${item.color}`}}
@@ -38,13 +42,13 @@ class DarkerAndLighterComponent extends Component {
           </button>
           <button 
             className = 'btn'
-            onClick = {() => this.props.selectAllColors(this.props.darkerArray)}
+            onClick = {() => this.props.selectAllColors(this.props.mixedArray)}
           >
             Select all
           </button>
           <button 
-            className = {isVisibleRemoveBtn(this.props.darkerArray) ? 'btn danger' : 'btn danger hidden'}
-            onClick = {() => this.props.removeAllColors(this.props.darkerArray)}
+            className = {isVisibleRemoveBtn(this.props.mixedArray) ? 'btn danger' : 'btn danger hidden'}
+            onClick = {() => this.props.removeAllColors(this.props.mixedArray)}
           >
             Remove all
           </button>
@@ -56,24 +60,24 @@ class DarkerAndLighterComponent extends Component {
 
 const mapStateToProps = store => {
   return {
-    darkerArray : store.darkerArray,
+    mixedArray : store.mixedArray,
     isDarkBg : store.isDarkBg
   }
 }
 
 const mapDispatchToProps = dispatch => ({ 
   selectColor : color => {
-    dispatch(selectDarkLightAction(color));
+    dispatch(selectMixedAction(color));
   },
   selectAllColors : array => {
-    dispatch(selectAllDarkLightAction(array));    
+    dispatch(selectAllMixedAction(array));    
   },
   removeAllColors : () => {
-    dispatch(removeAllDarkLightAction());    
+    dispatch(removeAllmixedAction());    
   },
   changeBg : () => {
-    dispatch(changeBgDarkLightAction());
+    dispatch(changeBgMixedAction());
   }
 })
 
-export default connect(mapStateToProps, mapDispatchToProps)(DarkerAndLighterComponent);
+export default connect(mapStateToProps, mapDispatchToProps)(MixedComponent);

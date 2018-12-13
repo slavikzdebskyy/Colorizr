@@ -8,6 +8,7 @@ import '../styles.scss';
 class AppComponent extends Component {
 
   render () {
+    
     return (
       <div className = 'app-container'>
         <HeaderComponent />

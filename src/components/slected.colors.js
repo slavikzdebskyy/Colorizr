@@ -10,7 +10,7 @@ class SelectedColors extends Component {
   getEmptyElements = countOfElements => {
     const emptyElements = [];
     for(let i = 0; i < countOfElements; i++) {
-      emptyElements.push(<li><i className = 'fas fa-times'></i></li>);
+      emptyElements.push(<li key = {i}><i className = 'fas fa-times'></i></li>);
     }
     return emptyElements;
   }

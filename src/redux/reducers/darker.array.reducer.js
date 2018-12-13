@@ -1,14 +1,14 @@
-import { getDarkenArray } from './../../func/functions';
+import { getDarkerArray } from '../../func/functions';
 
-const initState = getDarkenArray('#3b97d3');
+const initState = getDarkerArray('#3b97d3');
 
-const darkLightReducer = (state = initState, action) => {
+const darkerArrayReducer = (state = initState, action) => {
   switch(action.type) {
 
-    case 'CHANGE_DARK_LIGHT_ARRAY':
+    case 'CHANGE_DARKER_ARRAY':
       return action.payload;
 
-    case 'SELECT_DARK_LIGHT_ITEM':
+    case 'SELECT_DARKER_ITEM':
       state.forEach(item => {
         if (item.color === action.payload) {
           item.selected = !item.selected;
@@ -16,11 +16,11 @@ const darkLightReducer = (state = initState, action) => {
       })
       return [...state];
 
-    case 'SELECT_ALL_DARK_LIGHT_ITEM':
+    case 'SELECT_ALL_DARKER_ITEMS':
       state.forEach(item => item.selected = true);
       return [...state];
 
-    case 'REMOVE_ALL_DARK_LIGHT_ITEM':
+    case 'REMOVE_ALL_DARKER_ITEMS':
       state.forEach(item => item.selected = false);
       return [...state];
 
@@ -37,4 +37,4 @@ const darkLightReducer = (state = initState, action) => {
   }
 }
   
-export default darkLightReducer;
+export default darkerArrayReducer;

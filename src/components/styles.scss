@@ -17,7 +17,8 @@
 }
 
 .selected-colors-container,
-.darker-and-lighter-container {
+.darker-container,
+.mixed-container {
   @include flex(column, flex-start, space-around);
   width: 1200px;
   height: 220px;
@@ -28,7 +29,8 @@
   background-color: #fff;
 }
 
-.darker-and-lighter-container {
+.darker-container,
+.mixed-container {
   height: 370px;
   padding: 30px 0 30px;
   .btns-container {
@@ -36,4 +38,8 @@
     width: 100%; 
     padding-left: 30px;
   }
+}
+
+.mixed-title-container {
+  @include flex(row, center, flex-start);
 }

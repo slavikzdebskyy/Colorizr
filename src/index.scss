@@ -29,6 +29,7 @@ code {
 }
 
 header {
+  @include flex(row, center, space-around);
   width: 100%;
   height: 100px;  
 }
@@ -43,9 +44,10 @@ h1.title {
   margin: 50px 0 50px;
 }
 h2 {
-  margin-top: 0;
-  &.darker-and-lighter-title {
-    padding-left: 30px;
+  margin: 0;
+  &.darker-title,
+  &.mixed-title {
+    padding: 0 30px 0;
   }
 }
 
@@ -61,6 +63,7 @@ ul {
     cursor: pointer;
   }
   &.nav {
+    @include flex(row, center, space-between);
     li {
       color: #e91e63;
       padding: 5px 10px 5px;
@@ -96,7 +99,8 @@ ul {
       }
     }
   }
-  &.darker-and-lighter-list {    
+  &.darker-list,
+  &.mixed-list {    
     @include flex(row, center, space-between);
     background-color: #f5f5f5;
     width: 100%;
@@ -172,37 +176,11 @@ button.btn {
 .rc-color-picker-panel-inner {
   width: 318px;
 }
-
-
-.flex-row-space-around-center-wrap {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  flex-wrap: wrap;
-}
-.flex-row-space-between-center-wrap {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-}
-.flex-col-justify-start-center {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.rc-color-picker-trigger {
+  width: 30px;
+  height: 30px;
 }
 
-.flex-col-space-around-start {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: start;
-}
 
-.flex-col-center-center {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
+
 

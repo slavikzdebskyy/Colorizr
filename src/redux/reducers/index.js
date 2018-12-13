@@ -1,12 +1,16 @@
 import { combineReducers } from 'redux';
 import mainColorReducer from './main.color.reducer';
-import darkLightReducer from './dark.light.reducer';
+import darkerArrayReducer from './darker.array.reducer';
 import selectedColorsReducer from './selected.colors.reducer';
 import changeBgReducer from './change.background.reducer';
+import mixedColorReducer from './mixed.color.reducer';
+import mixedArrayReducer from './mixed.array.reducer';
 
 export default combineReducers ({
   mainColor : mainColorReducer,
-  darkAndLight : darkLightReducer,
+  mixedColor : mixedColorReducer,
+  darkerArray : darkerArrayReducer,
   selectedColors : selectedColorsReducer,
-  isDarkBg : changeBgReducer
+  isDarkBg : changeBgReducer,
+  mixedArray : mixedArrayReducer
 })

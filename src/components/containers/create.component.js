@@ -3,22 +3,30 @@ import { connect } from 'react-redux';
 
 import ColorPickerComponent from '../color.picker';
 import SelectedColors from '../slected.colors';
-import DarkerAndLighter from '../darker.lighter';
+import DarkerAndLighterComponent from '../darker.lighter';
+import MixedComponent from './../mixed';
 
 import '../styles.scss';
 
 class CreateComponent extends Component {
 
   render () {
+    
     return (
       <div 
         className = 'create-container'
-        style = {{backgroundColor : `${this.props.mainColor}`}}
+        style = {{backgroundColor : `${this.props.mainColor.color}`}}
       >
-        <h1 className = 'title'>Choose your color</h1>
-        <ColorPickerComponent hidden = {true} />
+        <h1 
+          className = 'title'
+          style = {this.props.mainColor.isLight ? {color : '#000'} : {color : '#fff'}}
+        >
+          Choose your color
+        </h1>
+        <ColorPickerComponent hidden = {false} />
         <SelectedColors />
-        <DarkerAndLighter />
+        <DarkerAndLighterComponent />
+        <MixedComponent />
       </div>
     );
   }

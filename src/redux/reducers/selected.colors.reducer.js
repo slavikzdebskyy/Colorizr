@@ -1,26 +1,41 @@
 const selectedColorsReducer = (state = [], action) => {
   switch(action.type) {
 
-    case 'SELECT_DARK_LIGHT_ITEM':
-      const index = state.indexOf(action.payload);
-      if (index >= 0) {
-        state.splice(index,1);
+    case 'SELECT_DARKER_ITEM':
+      if (state.includes(action.payload)) {
+        return [...state.filter(item => item !== action.payload)];
       } else {
-        state.length === 10 ? state.shift().push(action.payload) : state.push(action.payload);
-      }      
-      return [...state];  
+        state.push(action.payload); 
+        return [...state.slice(state.length - 10, state.length)];
+      }    
 
     case 'REMOVE_SELECTED_COLOR':
-      const indexEl = state.indexOf(action.payload);
-      state.splice(indexEl,1);
+      const indexDarkerRemove = state.indexOf(action.payload);
+      state.splice(indexDarkerRemove,1);
       return [...state];
     
-    case 'SELECT_ALL_DARK_LIGHT_ITEM':
-      const newState = []; 
-      action.payload.forEach(item => newState.push(item.color));
-      return [...newState];
+    case 'SELECT_ALL_DARKER_ITEMS':
+      const newDarkerState = []; 
+      action.payload.forEach(item => newDarkerState.push(item.color));
+      return [...newDarkerState];
 
-    case 'REMOVE_ALL_DARK_LIGHT_ITEM':
+    case 'REMOVE_ALL_DARKER_ITEMS':
+      return [];
+    
+      case 'SELECT_MIXED_ITEM':
+        if (state.includes(action.payload)) {
+          return [...state.filter(item => item !== action.payload)];
+        } else {
+          state.push(action.payload); 
+          return [...state.slice(state.length - 10, state.length)];
+        }   
+    
+    case 'SELECT_ALL_MIXED_ITEMS':
+      const newMixedState = []; 
+      action.payload.forEach(item => newMixedState.push(item.color));
+      return [...newMixedState];
+
+    case 'REMOVE_ALL_MIXED_ITEMS':
       return [];
 
     default:
