@@ -17,10 +17,7 @@ class CreateComponent extends Component {
         className = 'create-container'
         style = {{backgroundColor : `${this.props.mainColor.color}`}}
       >
-        <h1 
-          className = 'title'
-          style = {this.props.mainColor.isLight ? {color : '#000'} : {color : '#fff'}}
-        >
+        <h1 style = {this.props.mainColor.isLight ? {color : '#000'} : {color : '#fff'}}>
           Choose your color
         </h1>
         <ColorPickerComponent hidden = {false} />
