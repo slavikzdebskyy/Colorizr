@@ -181,3 +181,105 @@ export const material = [{
   "color": "#5f46ae",
   "selected": false
 }];
+
+export const presetns = [{
+  "colors": [
+    "#664e10",
+    "#3bd47e",
+    "#598a89",
+    "#4b4ef8",
+    "#8bf75a"
+  ],
+  "name": "Aspirin",
+  "selected": false
+}, {
+  "colors": [
+    "#deef5a",
+    "#ab442e",
+    "#bbead8",
+    "#d5e82a",
+    "#0747a2"
+  ],
+  "name": "Bird",
+  "selected": false
+}, {
+  "colors": [
+    "#65b03f",
+    "#139cc0",
+    "#b7410a",
+    "#5af68a",
+    "#30f504"
+  ],
+  "name": "Firenze",
+  "selected": false
+}, {
+  "colors": [
+    "#851653",
+    "#9cd14c",
+    "#0889e5",
+    "#f1ba5b",
+    "#7e3245"
+  ],
+  "name": "Honey",
+  "selected": false
+}, {
+  "colors": [
+    "#2cc3ca",
+    "#4ab056",
+    "#53188c",
+    "#47632a",
+    "#05a1bf"
+  ],
+  "name": "Retromatic",
+  "selected": false
+}, {
+  "colors": [
+    "#b90bde",
+    "#6ac74d",
+    "#bfbdbb",
+    "#7e4f10",
+    "#192e39"
+  ],
+  "name": "Sandy",
+  "selected": false
+}, {
+  "colors": [
+    "#8c7c37",
+    "#663bbc",
+    "#0ddb12",
+    "#a8914a",
+    "#aacd46"
+  ],
+  "name": "Sky",
+  "selected": false
+}, {
+  "colors": [
+    "#6b707b",
+    "#27c77f",
+    "#5fc4a6",
+    "#0ecff9",
+    "#83fd97"
+  ],
+  "name": "Sunset",
+  "selected": false
+}, {
+  "colors": [
+    "#3c3e59",
+    "#10d967",
+    "#5641d7",
+    "#829d7a",
+    "#09e37f"
+  ],
+  "name": "Times",
+  "selected": false
+}, {
+  "colors": [
+    "#2c2143",
+    "#e0bc88",
+    "#256c07",
+    "#e1637e",
+    "#0f38b1"
+  ],
+  "name": "Wolf",
+  "selected": false
+}]

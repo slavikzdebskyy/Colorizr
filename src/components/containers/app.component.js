@@ -5,8 +5,10 @@ import HeaderComponent from './header.component';
 import CreateComponent from './create.component';
 import FooterComponent from './footer.component';
 import ExploreComponent from './explore.component';
+import PresetsComponent from './presets.component';
 
 import '../styles.scss';
+
 
 class AppComponent extends Component {
 
@@ -19,6 +21,8 @@ class AppComponent extends Component {
             <Switch>
               <Route exact path = '/' component = {CreateComponent} /> 
               <Route path = '/explore' component = {ExploreComponent} /> 
+              <Route path = '/presets' component = {PresetsComponent} />
+              {/* <Route path = '/export' component = {} /> */}
             </Switch>
           <FooterComponent />  
         </div>           

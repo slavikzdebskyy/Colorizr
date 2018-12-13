@@ -36,7 +36,7 @@ const selectedColorsReducer = (state = [], action) => {
         return state.length >= 10 ? [...state.slice(state.length - 10, state.length)] : [...state];
       } 
     
-      case 'SELECT_MATERIAL_ITEM':
+    case 'SELECT_MATERIAL_ITEM':
       if (state.includes(action.payload)) {
         return [...state.filter(item => item !== action.payload)];
       } else {
@@ -48,6 +48,9 @@ const selectedColorsReducer = (state = [], action) => {
       const newMixedState = []; 
       action.payload.forEach(item => newMixedState.push(item.color));
       return [...newMixedState];
+
+    case 'SELECT_SCHEME_ITEM':
+      return [...action.payload.colors]; 
 
     case 'REMOVE_ALL_MIXED_ITEMS':
       return [];

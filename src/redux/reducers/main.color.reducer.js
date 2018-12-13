@@ -6,8 +6,16 @@ const initState = {
 }
 
 const mainColorReducer = (state = initState, action) => {
-  const color = Color(action.payload);  
-  return action.type === 'CHANGE_MAIN_COLOR' ? { color : action.payload, isLight : color.isLight() } : state;
+  switch (action.type) {
+
+    case 'CHANGE_MAIN_COLOR':
+      const color = Color(action.payload);
+      return { color : action.payload, isLight : color.isLight() };
+
+    default:
+      return state;
+      
+  }  
 }
   
 export default mainColorReducer;
