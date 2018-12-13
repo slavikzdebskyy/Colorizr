@@ -1,0 +1,183 @@
+export const flat = [{
+  "color": "#a08986",
+  "selected": false
+}, {
+  "color": "#4387bf",
+  "selected": false
+}, {
+  "color": "#a6a8b9",
+  "selected": false
+}, {
+  "color": "#b425eb",
+  "selected": false
+}, {
+  "color": "#63cce1",
+  "selected": false
+}, {
+  "color": "#a7dd27",
+  "selected": false
+}, {
+  "color": "#8e6578",
+  "selected": false
+}, {
+  "color": "#039e5b",
+  "selected": false
+}, {
+  "color": "#b02bea",
+  "selected": false
+}, {
+  "color": "#bbdc35",
+  "selected": false
+}, {
+  "color": "#8de18d",
+  "selected": false
+}, {
+  "color": "#172a00",
+  "selected": false
+}, {
+  "color": "#ccc937",
+  "selected": false
+}, {
+  "color": "#2f9863",
+  "selected": false
+}, {
+  "color": "#cab899",
+  "selected": false
+}, {
+  "color": "#e5d21b",
+  "selected": false
+}, {
+  "color": "#3f9d04",
+  "selected": false
+}, {
+  "color": "#347eaa",
+  "selected": false
+}, {
+  "color": "#ab8962",
+  "selected": false
+}, {
+  "color": "#e9b841",
+  "selected": false
+}, {
+  "color": "#a31b42",
+  "selected": false
+}, {
+  "color": "#a18544",
+  "selected": false
+}, {
+  "color": "#43fa5b",
+  "selected": false
+}, {
+  "color": "#02a320",
+  "selected": false
+}, {
+  "color": "#ece300",
+  "selected": false
+}, {
+  "color": "#09588a",
+  "selected": false
+}, {
+  "color": "#dc0239",
+  "selected": false
+}, {
+  "color": "#7d6584",
+  "selected": false
+}, {
+  "color": "#5c7ce3",
+  "selected": false
+}, {
+  "color": "#25b511",
+  "selected": false
+}];
+
+export const material = [{
+  "color": "#870862",
+  "selected": false
+}, {
+  "color": "#74e9b1",
+  "selected": false
+}, {
+  "color": "#6a3682",
+  "selected": false
+}, {
+  "color": "#cc0ed0",
+  "selected": false
+}, {
+  "color": "#20e6fb",
+  "selected": false
+}, {
+  "color": "#26c99e",
+  "selected": false
+}, {
+  "color": "#f2da4d",
+  "selected": false
+}, {
+  "color": "#ed2eec",
+  "selected": false
+}, {
+  "color": "#629154",
+  "selected": false
+}, {
+  "color": "#a531b8",
+  "selected": false
+}, {
+  "color": "#fcc841",
+  "selected": false
+}, {
+  "color": "#6a4e09",
+  "selected": false
+}, {
+  "color": "#d762ec",
+  "selected": false
+}, {
+  "color": "#ce4a8c",
+  "selected": false
+}, {
+  "color": "#676f8c",
+  "selected": false
+}, {
+  "color": "#2dd220",
+  "selected": false
+}, {
+  "color": "#d46d9b",
+  "selected": false
+}, {
+  "color": "#d9c05f",
+  "selected": false
+}, {
+  "color": "#da3164",
+  "selected": false
+}, {
+  "color": "#deaff0",
+  "selected": false
+}, {
+  "color": "#84941e",
+  "selected": false
+}, {
+  "color": "#cfa996",
+  "selected": false
+}, {
+  "color": "#026d07",
+  "selected": false
+}, {
+  "color": "#cfd7f1",
+  "selected": false
+}, {
+  "color": "#65ea31",
+  "selected": false
+}, {
+  "color": "#2af191",
+  "selected": false
+}, {
+  "color": "#d5491b",
+  "selected": false
+}, {
+  "color": "#3f082e",
+  "selected": false
+}, {
+  "color": "#21b8d2",
+  "selected": false
+}, {
+  "color": "#5f46ae",
+  "selected": false
+}];

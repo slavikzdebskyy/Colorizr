@@ -1,4 +1,4 @@
-const selectedColorsReducer = (state = [], action) => {
+const selectedColorsReducer = (state = [], action) => {  
   switch(action.type) {
 
     case 'SELECT_DARKER_ITEM':
@@ -6,13 +6,11 @@ const selectedColorsReducer = (state = [], action) => {
         return [...state.filter(item => item !== action.payload)];
       } else {
         state.push(action.payload); 
-        return [...state.slice(state.length - 10, state.length)];
+        return state.length >= 10 ? [...state.slice(state.length - 10, state.length)] : [...state];
       }    
 
     case 'REMOVE_SELECTED_COLOR':
-      const indexDarkerRemove = state.indexOf(action.payload);
-      state.splice(indexDarkerRemove,1);
-      return [...state];
+      return [...state.filter(item => item !== action.payload)];
     
     case 'SELECT_ALL_DARKER_ITEMS':
       const newDarkerState = []; 
@@ -22,13 +20,29 @@ const selectedColorsReducer = (state = [], action) => {
     case 'REMOVE_ALL_DARKER_ITEMS':
       return [];
     
-      case 'SELECT_MIXED_ITEM':
-        if (state.includes(action.payload)) {
-          return [...state.filter(item => item !== action.payload)];
-        } else {
-          state.push(action.payload); 
-          return [...state.slice(state.length - 10, state.length)];
-        }   
+    case 'SELECT_MIXED_ITEM':
+      if (state.includes(action.payload)) {
+        return [...state.filter(item => item !== action.payload)];
+      } else {
+        state.push(action.payload); 
+        return state.length >= 10 ? [...state.slice(state.length - 10, state.length)] : [...state];
+      } 
+      
+    case 'SELECT_FLAT_ITEM':
+      if (state.includes(action.payload)) {
+        return [...state.filter(item => item !== action.payload)];
+      } else {
+        state.push(action.payload); 
+        return state.length >= 10 ? [...state.slice(state.length - 10, state.length)] : [...state];
+      } 
+    
+      case 'SELECT_MATERIAL_ITEM':
+      if (state.includes(action.payload)) {
+        return [...state.filter(item => item !== action.payload)];
+      } else {
+        state.push(action.payload); 
+        return state.length >= 10 ? [...state.slice(state.length - 10, state.length)] : [...state];
+      } 
     
     case 'SELECT_ALL_MIXED_ITEMS':
       const newMixedState = []; 

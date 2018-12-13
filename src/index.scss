@@ -30,6 +30,7 @@ code {
 
 header {
   @include flex(row, center, space-around);
+  box-shadow: #ccc 0px 2px 5px;
   width: 100%;
   height: 100px;  
 }

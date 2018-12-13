@@ -4,6 +4,7 @@ import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import HeaderComponent from './header.component';
 import CreateComponent from './create.component';
 import FooterComponent from './footer.component';
+import ExploreComponent from './explore.component';
 
 import '../styles.scss';
 
@@ -17,7 +18,7 @@ class AppComponent extends Component {
           <HeaderComponent />
             <Switch>
               <Route exact path = '/' component = {CreateComponent} /> 
-              {/* <Route path = '/:country' component = {countryComponent} />  */}
+              <Route path = '/explore' component = {ExploreComponent} /> 
             </Switch>
           <FooterComponent />  
         </div>           

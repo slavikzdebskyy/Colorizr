@@ -6,7 +6,7 @@ import '../styles.scss';
 
 class HeaderComponent extends Component {
   
-  render () { console.log('HEADER =>', this.props)
+  render () {
     
     return (
       <header>
