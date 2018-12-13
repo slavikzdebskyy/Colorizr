@@ -9,7 +9,7 @@ App greates variables of colors in Sass, Less, Stylus;
 
 ## Demo:
 
-* [Colorizr](https://) 
+* [Colorizr](https://slavikzdebskyy.github.io/colorizr.github.io) 
 
 ## Tech stack:
 
