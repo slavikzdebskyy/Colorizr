@@ -27,3 +27,16 @@ export const isVisibleRemoveBtn = array => {
   return count === array.length;
 }
 
+export const getVariablesArray = colorsArray => {
+  const varArr = [];
+  
+  colorsArray.forEach((item, index) => {
+    const itemObj = {
+      variableName : `color-${index + 1}`, 
+      color : item
+    }
+    varArr.push(itemObj);
+  })
+  return varArr;
+}
+

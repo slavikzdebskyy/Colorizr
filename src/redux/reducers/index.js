@@ -7,6 +7,7 @@ import mixedColorReducer from './mixed.color.reducer';
 import mixedArrayReducer from './mixed.array.reducer';
 import { flatReducer, materialReducer } from './flat.material.reducers';
 import schemesArrayReducer from './schemes.array.reducer';
+import variableArrayReducer from './variable.array.reducer';
 
 export default combineReducers ({
   mainColor : mainColorReducer,
@@ -17,5 +18,6 @@ export default combineReducers ({
   mixedArray : mixedArrayReducer,
   flatArray : flatReducer,
   materialArray : materialReducer,
-  schemesArray : schemesArrayReducer
+  schemesArray : schemesArrayReducer,
+  variableArray : variableArrayReducer
 })

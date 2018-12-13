@@ -12,7 +12,8 @@
 
 .create-container,
 .explore-container,
-.presets-container {
+.presets-container,
+.export-container{
   @include flex(column, center, flex-start);
   width: 100%;
 }
@@ -104,12 +105,20 @@
   margin-bottom: 40px;
 }
 
+.variables-container {
+  @include flex(column, flex-start, space-around);
+  width: 1200px;  
+  margin: auto;  
+  margin-bottom: 40px;
+}
+
 @media screen and (max-width: 1260px) {
   .collection-container,
   .scheme-container,
   .selected-colors-container,
   .darker-container,
-  .mixed-container {
+  .mixed-container,
+  .variables-container {
     width: 100%;
   }
 }

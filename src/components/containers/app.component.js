@@ -6,6 +6,7 @@ import CreateComponent from './create.component';
 import FooterComponent from './footer.component';
 import ExploreComponent from './explore.component';
 import PresetsComponent from './presets.component';
+import ExportComponent from './export.component';
 
 import '../styles.scss';
 
@@ -22,7 +23,7 @@ class AppComponent extends Component {
               <Route exact path = '/' component = {CreateComponent} /> 
               <Route path = '/explore' component = {ExploreComponent} /> 
               <Route path = '/presets' component = {PresetsComponent} />
-              {/* <Route path = '/export' component = {} /> */}
+              <Route path = '/export' component = {ExportComponent} />
             </Switch>
           <FooterComponent />  
         </div>           
