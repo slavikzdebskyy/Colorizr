@@ -34,9 +34,24 @@ header {
   height: 100px;  
 }
 
-img.logo-img-svg {
-  max-width: 200px;
+footer {
+  @include flex(column, center, center);
+  width: 100%;
+  height: 300px;
+  background-color: #000; 
 }
+
+img {
+  &.logo-img-svg {
+    max-width: 200px;
+  }
+  &.footer-img {
+    width: 330px;
+    margin: 20px;
+  }
+}
+
+
 
 h1.title {
   width: 100%;
@@ -49,6 +64,9 @@ h2 {
   &.mixed-title {
     padding: 0 30px 0;
   }
+}
+h3 {
+  color: #fff;
 }
 
 ul {
