@@ -12,15 +12,15 @@ self.__precacheManifest = [
     "url": "/colorizr.github.io/static/js/runtime~main.8ea55d2a.js"
   },
   {
-    "revision": "225395897b6ad551c736",
-    "url": "/colorizr.github.io/static/js/main.22539589.chunk.js"
+    "revision": "746be8655b4565109537",
+    "url": "/colorizr.github.io/static/js/main.746be865.chunk.js"
   },
   {
     "revision": "369411a6dc9e382fda56",
     "url": "/colorizr.github.io/static/js/1.369411a6.chunk.js"
   },
   {
-    "revision": "225395897b6ad551c736",
+    "revision": "746be8655b4565109537",
     "url": "/colorizr.github.io/static/css/main.e1bdb318.chunk.css"
   },
   {
@@ -28,7 +28,7 @@ self.__precacheManifest = [
     "url": "/colorizr.github.io/static/css/1.6cc2a1f4.chunk.css"
   },
   {
-    "revision": "c2f5ea0fd5f11f03fe7e167a477e404c",
+    "revision": "801e7eb98874b841efc8fdb36bf9453f",
     "url": "/colorizr.github.io/index.html"
   }
 ];

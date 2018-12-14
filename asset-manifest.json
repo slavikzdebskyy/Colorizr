@@ -1,7 +1,7 @@
 {
   "main.css": "/colorizr.github.io/static/css/main.e1bdb318.chunk.css",
-  "main.js": "/colorizr.github.io/static/js/main.22539589.chunk.js",
-  "main.js.map": "/colorizr.github.io/static/js/main.22539589.chunk.js.map",
+  "main.js": "/colorizr.github.io/static/js/main.746be865.chunk.js",
+  "main.js.map": "/colorizr.github.io/static/js/main.746be865.chunk.js.map",
   "static/css/1.6cc2a1f4.chunk.css": "/colorizr.github.io/static/css/1.6cc2a1f4.chunk.css",
   "static/js/1.369411a6.chunk.js": "/colorizr.github.io/static/js/1.369411a6.chunk.js",
   "static/js/1.369411a6.chunk.js.map": "/colorizr.github.io/static/js/1.369411a6.chunk.js.map",
@@ -12,6 +12,6 @@
   "static/media/logo-light.svg": "/colorizr.github.io/static/media/logo-light.8a246dfd.svg",
   "static/css/1.6cc2a1f4.chunk.css.map": "/colorizr.github.io/static/css/1.6cc2a1f4.chunk.css.map",
   "index.html": "/colorizr.github.io/index.html",
-  "precache-manifest.0d0ffa960dec8c1b227604782c757a78.js": "/colorizr.github.io/precache-manifest.0d0ffa960dec8c1b227604782c757a78.js",
+  "precache-manifest.7c1ec949eeca4c35ad0fe9304c45267b.js": "/colorizr.github.io/precache-manifest.7c1ec949eeca4c35ad0fe9304c45267b.js",
   "service-worker.js": "/colorizr.github.io/service-worker.js"
 }
