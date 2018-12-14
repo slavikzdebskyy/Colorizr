@@ -8,6 +8,7 @@
       "type": "image/x-icon"
     }
   ],
+  "homepage": "https://slavikzdebskyy.github.io/colorizr.github.io",
   "start_url": ".",
   "display": "standalone",
   "theme_color": "#000000",

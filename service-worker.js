@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "https://slavikzdebskyy.github.io/colorizr.github.io/precache-manifest.3a92c42e56f3bd86807b8cf682c2fad1.js"
+  "/colorizr.github.io/precache-manifest.7c1ec949eeca4c35ad0fe9304c45267b.js"
 );
 
 workbox.clientsClaim();
@@ -28,7 +28,7 @@ self.__precacheManifest = [].concat(self.__precacheManifest || []);
 workbox.precaching.suppressWarnings();
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 
-workbox.routing.registerNavigationRoute("https://slavikzdebskyy.github.io/colorizr.github.io/index.html", {
+workbox.routing.registerNavigationRoute("/colorizr.github.io/index.html", {
   
   blacklist: [/^\/_/,/\/[^\/]+\.[^\/]+$/],
 });
