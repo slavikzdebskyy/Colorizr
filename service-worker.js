@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/colorizr.github.io/precache-manifest.71a7d46cda054537cf3bf61543162c0b.js"
+  "/colorizr.github.io/precache-manifest.0d0ffa960dec8c1b227604782c757a78.js"
 );
 
 workbox.clientsClaim();

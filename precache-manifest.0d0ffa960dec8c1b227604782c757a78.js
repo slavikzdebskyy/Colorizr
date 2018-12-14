@@ -28,7 +28,7 @@ self.__precacheManifest = [
     "url": "/colorizr.github.io/static/css/1.6cc2a1f4.chunk.css"
   },
   {
-    "revision": "646c06c999bafa1f3805faac307f7c85",
+    "revision": "c2f5ea0fd5f11f03fe7e167a477e404c",
     "url": "/colorizr.github.io/index.html"
   }
 ];
